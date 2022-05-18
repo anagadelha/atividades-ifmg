@@ -51,5 +51,7 @@ public class main {
         questoes.questao22();
         //Questão 23
         questoes.questao23(1450, 1150, 900, 350, 400, 300, 100, 3000);
+        //Questão 24
+        questoes.questao24();
     }
 }

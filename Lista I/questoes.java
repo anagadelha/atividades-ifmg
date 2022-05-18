@@ -258,4 +258,25 @@ public class questoes {
 		  System.out.println("O número de telespectadores que nenhuma das novelas os agradam é " + telespectadoresFinal);
 	  }
 	 
+	//Questão 24
+	  public static void questao24() {
+		  	Scanner in = new Scanner(System.in); 
+			  
+			System.out.println("Digite o primeiro valor:");
+	        int a = in.nextInt();
+	        
+	        System.out.println("Digite o segundo valor:");
+	        int b = in.nextInt();
+	        
+	        System.out.println("Digite o terceiro valor:");
+	        int c = in.nextInt();
+		  
+	        if(a != 0){
+	        	
+        	double resultado = ((Math.pow(b, 2)) + a + c);
+	        double raizQuadrada = (int)Math.sqrt(resultado);     
+	  
+			System.out.println("O resultado da equação é " + raizQuadrada);
+	        }
+	  
 }
