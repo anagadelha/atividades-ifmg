@@ -260,23 +260,32 @@ public class questoes {
 	 
 	//Questão 24
 	  public static void questao24() {
-		  	Scanner in = new Scanner(System.in); 
-			  
-			System.out.println("Digite o primeiro valor:");
-	        int a = in.nextInt();
-	        
-	        System.out.println("Digite o segundo valor:");
-	        int b = in.nextInt();
-	        
-	        System.out.println("Digite o terceiro valor:");
-	        int c = in.nextInt();
+		Scanner in = new Scanner(System.in); 
 		  
-	        if(a != 0){
-	        	
-        	double resultado = ((Math.pow(b, 2)) + a + c);
-	        double raizQuadrada = (int)Math.sqrt(resultado);     
+		System.out.println("Digite o primeiro valor:");
+		int a = in.nextInt();
+		
+		System.out.println("Digite o segundo valor:");
+		int b = in.nextInt();
+		
+		System.out.println("Digite o terceiro valor:");
+	    int c = in.nextInt();
 	  
-			System.out.println("O resultado da equação é " + raizQuadrada);
-	        }
-	  
+	    if(a != 0){
+	    	
+	    	double delta = ((Math.pow(b, 2)) - 4 * a * c);
+	    	
+	    	if(delta >= 0) {
+		        double x1 = ((-1 * b) + Math.sqrt(delta))/(2 * a);     
+		        double x2 = ((-1 * b) - Math.sqrt(delta))/(2 * a);
+				System.out.printf("O resultado da equação é %.2f e %.2f", x1, x2);
+			} else {
+				System.out.println("Não é uma equação.");
+			}
+			
+		} else {
+			System.out.println("Não é uma equação.");
+		}
+	}
+	 
 }
